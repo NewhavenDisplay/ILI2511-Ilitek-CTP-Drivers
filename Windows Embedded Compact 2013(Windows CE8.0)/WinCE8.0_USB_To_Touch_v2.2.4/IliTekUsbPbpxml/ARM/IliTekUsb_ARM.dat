@@ -1,0 +1,1 @@
+Directory("\Windows\LOC_DESKTOP_DIR"):-File("TouchTool.lnk", "\Windows\TouchTool.lnk")

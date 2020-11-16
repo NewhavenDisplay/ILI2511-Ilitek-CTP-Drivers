@@ -1,0 +1,40 @@
+CECInfo
+(
+	Name ( "ILITEK WinCE USB Driver" )
+	CECVersion ( 6.00 )
+	Description ( "ILITEK WinCE USB Driver" )
+	GUID ( {956C0C75-A2BA-4F46-99AF-0645E5EED42D} )
+	Vendor ( "ILITEK" )
+)
+ComponentType
+(
+	Name ( "ILITEK WinCE USB Driver" )
+	GUID ( {C37B6902-380A-4D9A-A6BE-493B147D435A} )
+	Description ( "ILITEK WinCE USB Driver" )
+	Vendor ( "ILITEK" )
+	MaxResolvedImpsAllowed( 1 )
+	Implementations
+	(
+		Implementation
+		(
+			Name ( "ILITEK WinCE USB Driver" )
+			GUID ( {48E62D62-C801-473C-827D-07ED7ABCBE14} )
+			Description ( "ILITEK WinCE USB Driver" )
+			Version ( "2.0.0.0" )
+			Locale ( 0409 )
+			Vendor ( "ILITEK" )
+			Date ( "2012/09/26" )
+			SizeIsCPUDependent( 1 )
+			BuildMethods
+			(
+				BuildMethod
+				(
+					GUID ( {3AE52EE8-EE48-4EE1-B33A-2B1AD9479B7A} )
+					Step ( CESYSGEN )
+					CPU ( "ARM" )
+					Action ( '#SRCCODE( USER_PROJECT, "$(_WINCEROOT)\PLATFORM\IliTekUsbPbpxml\ARM\IliTekUsb_ARM.pbpxml" )' )
+				)
+			)
+		)
+	)
+)
