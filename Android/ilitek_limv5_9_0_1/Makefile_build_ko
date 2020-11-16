@@ -1,0 +1,5 @@
+obj-m := ilitek_ts.o
+ilitek_ts-objs := ilitek_main.o \
+		 ilitek_platform_init.o \
+		 ilitek_update.o \
+		 ilitek_tool.o
